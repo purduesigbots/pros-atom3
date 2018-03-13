@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle pros-atom3",
+        "command": "pros-atom3:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "pros-atom3",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "pros-atom3:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

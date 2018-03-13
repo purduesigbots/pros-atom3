@@ -1,0 +1,19 @@
+{
+  "name": "pros-atom3",
+  "main": "./lib/pros-atom3",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "pros-atom3:toggle"
+  },
+  "repository": "https://github.com/atom/pros-atom3",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "etch": "^0.12.8"
+  }
+}
