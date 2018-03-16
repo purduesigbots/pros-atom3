@@ -13,6 +13,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "@purduesigbots/pros-cli-middleware": "latest",
     "etch": "^0.12.8"
   },
   "devDependencies": {}
