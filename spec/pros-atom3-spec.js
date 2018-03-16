@@ -1,6 +1,6 @@
-'use babel';
+'use babel'
 
-import ProsAtom3 from '../lib/pros-atom3';
+import ProsAtom3 from '../lib/pros-atom3'
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
@@ -8,39 +8,39 @@ import ProsAtom3 from '../lib/pros-atom3';
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
 describe('ProsAtom3', () => {
-  let workspaceElement, activationPromise;
+  let workspaceElement, activationPromise
 
   beforeEach(() => {
-    workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('pros-atom3');
-  });
+    workspaceElement = atom.views.getView(atom.workspace)
+    activationPromise = atom.packages.activatePackage('pros-atom3')
+  })
 
   describe('when the pros-atom3:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.pros-atom3')).not.toExist();
+      expect(workspaceElement.querySelector('.pros-atom3')).not.toExist()
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'pros-atom3:toggle');
+      atom.commands.dispatch(workspaceElement, 'pros-atom3:toggle')
 
       waitsForPromise(() => {
-        return activationPromise;
-      });
+        return activationPromise
+      })
 
       runs(() => {
-        expect(workspaceElement.querySelector('.pros-atom3')).toExist();
+        expect(workspaceElement.querySelector('.pros-atom3')).toExist()
 
-        let prosAtom3Element = workspaceElement.querySelector('.pros-atom3');
-        expect(prosAtom3Element).toExist();
+        let prosAtom3Element = workspaceElement.querySelector('.pros-atom3')
+        expect(prosAtom3Element).toExist()
 
-        let prosAtom3Panel = atom.workspace.panelForItem(prosAtom3Element);
-        expect(prosAtom3Panel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'pros-atom3:toggle');
-        expect(prosAtom3Panel.isVisible()).toBe(false);
-      });
-    });
+        let prosAtom3Panel = atom.workspace.panelForItem(prosAtom3Element)
+        expect(prosAtom3Panel.isVisible()).toBe(true)
+        atom.commands.dispatch(workspaceElement, 'pros-atom3:toggle')
+        expect(prosAtom3Panel.isVisible()).toBe(false)
+      })
+    })
 
     it('hides and shows the view', () => {
       // This test shows you an integration test testing at the view level.
@@ -49,25 +49,25 @@ describe('ProsAtom3', () => {
       // `toBeVisible()` matchers to work. Anything testing visibility or focus
       // requires that the workspaceElement is on the DOM. Tests that attach the
       // workspaceElement to the DOM are generally slower than those off DOM.
-      jasmine.attachToDOM(workspaceElement);
+      jasmine.attachToDOM(workspaceElement)
 
-      expect(workspaceElement.querySelector('.pros-atom3')).not.toExist();
+      expect(workspaceElement.querySelector('.pros-atom3')).not.toExist()
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'pros-atom3:toggle');
+      atom.commands.dispatch(workspaceElement, 'pros-atom3:toggle')
 
       waitsForPromise(() => {
-        return activationPromise;
-      });
+        return activationPromise
+      })
 
       runs(() => {
         // Now we can test for view visibility
-        let prosAtom3Element = workspaceElement.querySelector('.pros-atom3');
-        expect(prosAtom3Element).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'pros-atom3:toggle');
-        expect(prosAtom3Element).not.toBeVisible();
-      });
-    });
-  });
-});
+        let prosAtom3Element = workspaceElement.querySelector('.pros-atom3')
+        expect(prosAtom3Element).toBeVisible()
+        atom.commands.dispatch(workspaceElement, 'pros-atom3:toggle')
+        expect(prosAtom3Element).not.toBeVisible()
+      })
+    })
+  })
+})

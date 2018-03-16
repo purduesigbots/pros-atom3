@@ -5,7 +5,7 @@
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "pros-atom3:toggle"
+    "atom-workspace": "pros:new-project"
   },
   "repository": "https://github.com/atom/pros-atom3",
   "license": "MIT",
