@@ -4,6 +4,35 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-.pros-modal {
-  padding: 10px;
+.pros {
+  .pros-modal {
+    padding: 10px;
+  }
+
+  .file-picker button {
+    margin-left: 10px;
+  }
+  .file-picker button span:before {
+    margin-right: 0;
+  }
+
+  select.form-control {
+    color: @text-color;
+    border-color: @button-border-color;
+    background-color: @button-background-color;
+    &:hover,
+    &:focus {
+      box-shadow: none;
+      background-color: @button-background-color-hover;
+    }
+  }
+
+  .select-container {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .btn-container {
+    padding: 10px;
+  }
 }
