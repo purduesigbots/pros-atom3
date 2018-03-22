@@ -8,13 +8,18 @@
     "atom-workspace": "pros:new-project"
   },
   "repository": "https://github.com/atom/pros-atom3",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "atom-package-deps": "^4.6.2",
     "@purduesigbots/pros-cli-middleware": "latest",
     "etch": "^0.12.8"
+  },
+  "package-deps": {
+    "build": "^0.7.0",
+    "build-make": "^0.13.0"
   },
   "devDependencies": {}
 }
