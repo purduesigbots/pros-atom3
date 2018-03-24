@@ -1,5 +1,6 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "pros-atom3:toggle"
+    "ctrl-alt-o": "pros:new-project",
+    "ctrl-alt-u": "pros:upgrade-project"
   }
 }

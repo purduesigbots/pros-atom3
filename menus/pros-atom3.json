@@ -17,6 +17,10 @@
             {
               "label": "New Project",
               "command": "pros:new-project"
+            },
+            {
+              "label": "Upgrade Project",
+              "command": "pros:upgrade-project"
             }
           ]
         }
