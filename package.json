@@ -5,8 +5,7 @@
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "pros:new-project",
-    "atom-workspace": "pros:upgrade-project"
+    "atom-workspace": ["pros:new-project", "pros:upgrade-project", "pros:test-ui"]
   },
   "repository": "https://github.com/atom/pros-atom3",
   "license": "MPL-2.0",
@@ -16,7 +15,8 @@
   "dependencies": {
     "atom-package-deps": "^4.6.2",
     "@purduesigbots/pros-cli-middleware": "latest",
-    "etch": "^0.12.8"
+    "etch": "^0.12.8",
+    "glob": "^7.1.2"
   },
   "package-deps": {
     "build": "^0.7.0",
