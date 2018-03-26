@@ -22,5 +22,12 @@
     "build": "^0.7.0",
     "build-make": "^0.13.0"
   },
+  "consumedServices": {
+    "console": {
+      "versions": {
+        "0.1.0": "consumeConsole"
+      }
+    }
+  },
   "devDependencies": {}
 }
