@@ -5,7 +5,7 @@
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": ["pros:new-project", "pros:upgrade-project", "pros:test-ui"]
+    "atom-workspace": ["pros:new-project", "pros:upgrade-project", "pros:test-ui", "pros:upload"]
   },
   "repository": "https://github.com/atom/pros-atom3",
   "license": "MPL-2.0",
