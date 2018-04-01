@@ -4,9 +4,7 @@
   "version": "0.0.0",
   "description": "A short description of your package",
   "keywords": [],
-  "activationCommands": {
-    "atom-workspace": ["pros:new-project", "pros:upgrade-project", "pros:test-ui", "pros:upload"]
-  },
+  "activationHooks": ["core:loaded-shell-environment"],
   "repository": "https://github.com/atom/pros-atom3",
   "license": "MPL-2.0",
   "engines": {
@@ -22,7 +20,8 @@
   },
   "package-deps": {
     "build": "^0.7.0",
-    "build-make": "^0.13.0"
+    "build-make": "^0.13.0",
+    "terminal-tab": "^0.5.5"
   },
   "consumedServices": {
     "console": {
@@ -35,6 +34,17 @@
         "0.1.0": "consumeBusySignal"
       }
     },
+    "tool-bar": {
+      "versions": {
+        "^1": "consumeToolBar"
+      }
+    },
+    "terminal-tab": {
+      "versions": {
+        "^0.5.0": "consumeTerminalTab"
+      }
+    }
+  },
   "providedServices": {
     "builder": {
       "versions": {

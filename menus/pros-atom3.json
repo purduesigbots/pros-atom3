@@ -1,12 +1,4 @@
 {
-  "context-menu": {
-    "atom-text-editor": [
-      {
-        "label": "Create a new PROS project",
-        "command": "pros:new-project"
-      }
-    ]
-  },
   "menu": [
     {
       "label": "Packages",
