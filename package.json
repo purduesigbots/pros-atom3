@@ -16,7 +16,9 @@
     "atom-package-deps": "^4.6.2",
     "@purduesigbots/pros-cli-middleware": "latest",
     "etch": "^0.12.8",
-    "glob": "^7.1.2"
+    "glob": "^7.1.2",
+    "voucher": "^0.1.2",
+    "which": "^1.3.0"
   },
   "package-deps": {
     "build": "^0.7.0",
@@ -31,6 +33,12 @@
     "atom-ide-busy-signal": {
       "versions": {
         "0.1.0": "consumeBusySignal"
+      }
+    },
+  "providedServices": {
+    "builder": {
+      "versions": {
+        "2.0.0": "provideBuilder"
       }
     }
   },
