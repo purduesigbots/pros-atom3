@@ -1,11 +1,11 @@
 {
   "name": "pros-atom3",
   "main": "./lib/pros-atom3",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A short description of your package",
   "keywords": [],
   "activationHooks": ["core:loaded-shell-environment"],
-  "repository": "https://github.com/atom/pros-atom3",
+  "repository": "https://github.com/purduesigbots/pros-atom3",
   "license": "MPL-2.0",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
