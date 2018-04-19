@@ -7,3 +7,7 @@
 - [ ] list of things that can be tested to verify PR
 - [ ] ...
 - [ ] profit
+
+#### References
+
+[include references to other pull requests or issues here]
