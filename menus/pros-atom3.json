@@ -1,20 +1,15 @@
 {
   "menu": [
     {
-      "label": "Packages",
+      "label": "PROS",
       "submenu": [
         {
-          "label": "PROS",
-          "submenu": [
-            {
-              "label": "New Project",
-              "command": "pros:new-project"
-            },
-            {
-              "label": "Upgrade Project",
-              "command": "pros:upgrade-project"
-            }
-          ]
+          "label": "New Project",
+          "command": "pros:new-project"
+        },
+        {
+          "label": "Upgrade Project",
+          "command": "pros:upgrade-project"
         }
       ]
     }
