@@ -14,11 +14,12 @@
 - If you're unable to find an issue, [open](https://github.com/purduesigbots/pros/issues/new) a new one.
 
 **Did you patch a bug or add a new feature?**
-1. [Fork](https://github.com/purduesigbots/pros-atom/fork) and clone the repository
+1. [Fork](https://github.com/purduesigbots/pros-atom3/fork) and clone the repository
 2. Create a new branch: `git checkout -b my-branch-name`
 3. Make your changes
 4. Push to your fork and submit a pull request.
 5. Wait for your pull request to be reviewed.
+**Important:** Make sure you [sign your commits](https://help.github.com/articles/signing-commits-using-gpg/)! Currently, our branch protection rules mandate that all commits be signed before we merge to master.
 
 Here are a few tips that can help expedite your pull request being accepted:
 - Follow existing code's style.
