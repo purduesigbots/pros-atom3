@@ -24,7 +24,7 @@
   "package-deps": {
     "build": "^0.7.0",
     "build-make": "^0.13.0",
-    "terminal-tab": "^0.5.5"
+    "terminal-tab-plus": "^0.5.8"
   },
   "consumedServices": {
     "console": {
