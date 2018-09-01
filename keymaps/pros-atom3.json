@@ -1,6 +1,19 @@
 {
-  "atom-workspace": {
-    "ctrl-alt-o": "pros:new-project",
-    "ctrl-alt-u": "pros:upgrade-project"
+  ".platform-linux atom-workspace, .platform-linux atom-text-editor, .platform-win32 atom-workspace, .platform-win32 atom-text-editor": {
+    "ctrl-alt-shift-n": "pros:new-project",
+    "ctrl-alt-shift-u": "pros:upload",
+    "ctrl-alt-shift-t": "pros:terminal",
+    "ctrl-alt-shift-b": "pros:build",
+    "ctrl-alt-shift-c": "pros:build-clean"
+  },
+  ".platform-darwin atom-workspace, .platform-darwin atom-text-editor": {
+    "cmd-alt-shift-n": "pros:new-project",
+    "cmd-alt-shift-u": "pros:upload",
+    "cmd-alt-shift-t": "pros:terminal",
+    "cmd-alt-shift-b": "pros:build",
+    "cmd-alt-shift-c": "pros:build-clean"
+  },
+  ".pros-modal": {
+    "escape": "core:cancel"
   }
 }

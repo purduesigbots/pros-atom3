@@ -10,6 +10,23 @@
         {
           "label": "Upgrade Project",
           "command": "pros:upgrade-project"
+        },
+        {
+          "label": "Upload Project",
+          "command": "pros:upload"
+        },
+        {
+          "label": "Open Terminal",
+          "command": "pros:terminal"
+        },
+        {
+          "label": "Build",
+          "submenu": [
+            { "label": "Default", "command": "pros:build-default" },
+            { "label": "Quick", "command": "pros:build-quick" },
+            { "label": "Clean", "command": "pros:build-clean"},
+            { "label": "All", "command": "pros:build-all" }
+          ]
         }
       ]
     }
