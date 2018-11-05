@@ -33,3 +33,20 @@ section.pros-container > .section-heading:hover {
   color: rgba(157, 165, 180, 0.9);
   cursor: pointer;
 }
+
+div.pros-directory-selector {
+  display: flex;
+}
+div.pros-directory-selector > atom-text-editor {
+  flex: 1 1 auto;
+}
+
+div.pros-directory-selector > button {
+  flex: none;
+  margin-left: 0.5em;
+  margin-bottom: 0.75em;
+
+  span::before {
+    margin-right: 0;
+  }
+}
