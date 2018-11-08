@@ -34,6 +34,10 @@ section.pros-container > .section-heading:hover {
   cursor: pointer;
 }
 
+section.pros-component {
+  margin-bottom: 1em;
+}
+
 div.pros-directory-selector {
   display: flex;
 }
@@ -56,7 +60,7 @@ div.pros-parameter.is-invalid {
   border-color: @background-color-error;
   box-shadow: 0 0 0 2px @background-color-error;
   background-color: @app-background-color;
-  border-radius: 3px;
+  border-radius: @component-border-radius;
   outline: none;
   padding: 0.2em 0.5em;
 }
@@ -68,4 +72,11 @@ div.pros-label {
   .pros-spinner {
     margin: 0.5em;
   }
+}
+
+div.pros-verbatim-label {
+  text-align: left;
+  border-color: @inset-panel-border-color;
+  border-radius: @component-border-radius;
+  background-color: @syntax-background-color;
 }
