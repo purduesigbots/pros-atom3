@@ -13,10 +13,6 @@
         },
         {
           "label": "Upload Project",
-          "command": "pros:upload"
-        },
-        {
-          "label": "Upload Project Prompt",
           "command": "pros:upload-prompt"
         },
         {
