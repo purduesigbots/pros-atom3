@@ -1,0 +1,98 @@
+@import "ui-variables";
+
+section.pros-container {
+  margin-top: 1em;
+}
+section.pros-container.container-collapsed {
+  section {
+    display: none;
+  }
+}
+section.pros-container > .section-heading::after {
+  font-family: 'Octicons Regular';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  content: "\f0cc";
+  position: absolute;
+  right: 0;
+}
+section.pros-container.container-collapsed > .section-heading::after {
+  content: "\f039";
+}
+section.pros-container > .section-heading {
+  color: @text-color-subtle;
+}
+section.pros-container > .section-heading:hover {
+  color: @text-color-highlight;
+  cursor: pointer;
+}
+
+section.pros-component {
+  margin-bottom: 1em;
+}
+
+div.pros-directory-selector {
+  display: flex;
+}
+div.pros-directory-selector > atom-text-editor {
+  flex: 1 1 auto;
+}
+
+div.pros-directory-selector > button {
+  flex: none;
+  margin-left: 0.5em;
+  margin-bottom: 0.75em;
+
+  span::before {
+    margin-right: 0;
+  }
+}
+
+
+div.pros-parameter.is-invalid {
+  border-color: @background-color-error;
+  box-shadow: 0 0 0 2px @background-color-error;
+  background-color: @app-background-color;
+  border-radius: @component-border-radius;
+  outline: none;
+  padding: 0.2em 0.5em;
+}
+
+div.pros-label {
+  font-size: 1.2em;
+  text-align: center;
+
+  .pros-spinner {
+    margin: 0.5em;
+  }
+}
+
+div.pros-verbatim-label {
+  text-align: left;
+  border-color: @inset-panel-border-color;
+  border-radius: @component-border-radius;
+  background-color: @syntax-background-color;
+}
+
+section.pros-template-parameter {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+section.pros-template-parameter > .pros-component {
+  margin: auto 1em;
+}
+section.pros-template-parameter > .pros-component .pros-inputbox {
+  // make width of template name inputbox 15em
+  width: 15em;
+}
+section.pros-template-parameter > span {
+  margin: auto -.75em;
+}

@@ -13,7 +13,7 @@
         },
         {
           "label": "Upload Project",
-          "command": "pros:upload"
+          "command": "pros:upload-prompt"
         },
         {
           "label": "Open Terminal",
