@@ -1,7 +1,7 @@
 {
   "name": "pros-atom3",
   "main": "./lib/pros-atom3",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Provides integration with the PROS 3.x ecosystem",
   "keywords": [
     "pros",
@@ -23,7 +23,7 @@
     "showOnStartup": {
       "type": "boolean",
       "default": true,
-      "description": "Show welcome panes with useful information when opening a new Atom window."
+      "description": "Show welcome with useful information when opening a new Atom window."
     },
     "analytics": {
       "type": "boolean",
