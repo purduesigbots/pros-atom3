@@ -25,6 +25,7 @@
     "debounce": "^1.2.0",
     "etch": "^0.12.8",
     "glob": "^7.1.2",
+    "semver": "^7.3.2",
     "strip-ansi": "^4.0.0",
     "universal-analytics": "^0.4.20",
     "voucher": "^0.1.2",
