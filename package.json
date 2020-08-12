@@ -1,7 +1,7 @@
 {
   "name": "pros-atom3",
   "main": "./lib/pros-atom3",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Provides integration with the PROS 3.x ecosystem",
   "keywords": [
     "pros",
@@ -20,12 +20,14 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "@purduesigbots/pros-cli-middleware": "^2.4.1",
+    "@purduesigbots/pros-cli-middleware": "^2.5.0",
     "atom-package-deps": "^4.6.2",
     "debounce": "^1.2.0",
     "etch": "^0.12.8",
     "glob": "^7.1.2",
+    "semver": "^7.3.2",
     "strip-ansi": "^4.0.0",
+    "universal-analytics": "^0.4.20",
     "voucher": "^0.1.2",
     "which": "^1.3.0"
   },
