@@ -20,7 +20,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "@purduesigbots/pros-cli-middleware": "^2.5.0",
+    "@purduesigbots/pros-cli-middleware": "^2.5.1",
     "atom-package-deps": "^4.6.2",
     "debounce": "^1.2.0",
     "etch": "^0.12.8",
