@@ -1,7 +1,7 @@
 {
   "name": "pros-atom3",
   "main": "./lib/pros-atom3",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Provides integration with the PROS 3.x ecosystem",
   "keywords": [
     "pros",
